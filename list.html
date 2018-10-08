@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>天猫食品--理想生活上天猫</title>
+	<link rel="icon" type="text/css" href="images/icon.png">
+	<link rel="stylesheet" href="css/iconfont.css">
+	<link rel="stylesheet" href="css/list.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/list.js"></script>
+</head>
+<body>
+	<div class="index">
+        <!-- 导航 -->
+        <nav>
+            <!--导航栏-->
+            <div class="nav pub clearfix">
+                <div class="nav-lt">
+                	<span><a href="#"><i class="iconfont icon-shouye-s"></i> 天猫首页</a></span>
+                    <span>　喵，欢迎来天猫<a href="login.html">　请登录</a>
+                        <a href="#">　免费注册</a></span>
+                </div>
+                <div class="nav-rt clearfix">
+                    <li class="drop">
+                        <div class="drop-li">
+                            <a href="#">我的淘宝</a><b class="triangle"></b>
+                        </div>
+                        <div class="drop-list" id="mytaobao">
+                            <a href="#">已买到的宝贝</a>
+                            <a href="#">已卖出的宝贝</a>
+                        </div>
+                    </li>
+                    <li><a href="#"><i class="iconfont icon-gouwuche-mokuaixuanzhong"></i> 购物车<span>0</span>件</a></li>
+                    <li class="drop">
+                        <div class="drop-li">
+                            <a href="#">收藏夹</a><b class="triangle"></b>
+                        </div>
+                        <div class="drop-list" id="collect">
+                            <a href="#">收藏的宝贝</a>
+                            <a href="#">收藏的店铺</a>
+                        </div>
+                    </li>
+                    <li>|</li>
+                    <li><a href="#">淘宝网</a></li>
+                    <li class="drop">
+                        <div class="drop-li">
+                            <a href="#">商家支持</a><b class="triangle"></b>
+                        </div>
+                        <div class="drop-list" id="support-menu">
+                            <div class="menu-centre">
+                                <h4>商家：</h4>
+                                <a href="#" style="padding-right: 15px;">商家中心</a>
+                                <a href="#">天猫规则</a>
+                                <a href="#" style="padding-right: 15px;">商家入驻</a>
+                                <a href="#">运营服务</a>
+                                <a href="#" style="padding-right: 15px;">商家品控</a>
+                                <a href="#">商家工具</a>
+                                <a href="#" style="padding-right: 15px;">天猫智库</a>
+                                <a href="#">喵言喵语</a>
+                            </div>
+                            <div class="menu-help">
+                                <h4>帮助：</h4>
+                                <a href="#">帮助中心</a>
+                                <a href="#">问商友</a>
+                            </div>
+                        </div>
+                    </li>
+                </div>
+            </div>
+        </nav>
+        <div style="clear:both;"></div>
+        <!-- 头部 -->
+        <div class="headerbox clearfix">
+            <div class="header pub clearfix">
+                <div class="logo"><img src="images/TMALL.png"></div>
+                <div class="searchbox">
+                    <div class="search">
+                        <input class="searchcontent" placeholder="搜索 天猫 商品/品牌/店铺" type="text"><input class="button" type="button" value="搜 索">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 主体部分 -->
+        <main>
+        	<div class="main-content pub clearfix">
+			<!-- 侧边栏菜单 -->
+				<div class="main-menu">
+					<ul class="main-ul">
+						<li class="main-ul-li">
+							<h4><a href="#">进口食品</a></h4>
+							<a href="#" id="orange">进口牛奶</a>
+							<a href="#">进口酒</a>
+							<a href="#">进口饮料</a>
+							<a href="#">进口咖啡</a>
+							<a href="#">进口麦片</a>
+						</li>
+						<li class="main-menu-li_even main-ul-li">
+							<h4><a href="#">休闲零食</a></h4>
+							<a href="#">核桃</a>
+							<a href="#" id="orange">碧根果</a>
+							<a href="#" id="orange">红枣</a>
+							<a href="#">牛肉干</a>
+							<a href="#">猪肉脯</a>
+							<a href="#">鱿鱼丝</a>
+							<a href="#" id="orange">巧克力</a>
+							<a href="#">糖果</a>
+						</li>
+						<li class="main-ul-li">
+							<h4><a href="#">茶饮冲调</a></h4>
+							<a href="#" id="orange">茶叶</a>
+							<a href="#" id="orange">咖啡</a>
+							<a href="#" id="orange">牛奶</a>
+							<a href="#">酸奶</a>
+							<a href="#">饮料</a>
+							<a href="#">天然粉粉</a>
+							<a href="#">成人奶粉</a>
+							<a href="#">冲调食品</a>
+						</li>
+						<li class="main-menu-li_even main-ul-li">
+							<h4><a href="#">名优美酒</a></h4>
+							<a href="#" id="orange">白酒</a>
+							<a href="#">葡萄酒</a>
+							<a href="#">洋酒</a>
+							<a href="#">啤酒</a>
+							<a href="#">黄酒</a>
+							<a href="#">保健酒</a>
+						</li>
+						<li class="main-ul-li">
+							<h4><a href="#">粮油干货</a></h4>
+							<a href="#" id="orange">橄榄油</a>
+							<a href="#">大米</a>
+							<a href="#">方便面</a>
+							<a href="#">熟食</a>
+							<a href="#">火腿</a>
+							<a href="#">香菇</a>
+							<a href="#">调味品</a>
+							<a href="#">寿司料理</a>
+						</li>
+					</ul>
+					<ul class="main-drop-ul" id="withoutH4">
+						<li>
+							<h4><a href="#">进口牛奶</a></h4>
+							<a href="#" id="orange">进口酸奶</a>
+							<a href="#">进口酸奶粉</a>
+							<a href="#">全脂牛奶</a>
+							<a href="#">脱脂牛奶</a>
+							<a href="#">低脂牛奶</a>
+							<a href="#">低温牛奶</a>
+							<a href="#">德国牛奶</a>
+							<a href="#">新西兰牛奶</a>
+							<a href="#">澳洲牛奶</a>
+						</li>
+						<li>
+							<h4><a href="#">进口饼干</a></h4>
+							<a href="#">进口糕点</a>
+							<a href="#" id="orange">进口巧克力</a>
+						</li>
+						<li>
+							<h4><a href="#">进口糖果</a></h4>
+							<a href="#">进口果脯</a>
+							<a href="#">进口坚果</a>
+							<a href="#" id="orange">进口膨化</a>
+						</li>
+						<li>
+							<h4><a href="#">进口葡萄酒</a></h4>
+							<a href="#" id="orange">进口洋酒</a>
+							<a href="#">进口啤酒</a>
+							<a href="#">预调鸡尾酒</a>
+							<a href="#" id="orange">威士忌</a>
+							<a href="#">力娇酒</a>
+							<a href="#">伏特加</a>
+							<a href="#">白兰地</a>
+							<a href="#">朗姆酒</a>
+							<a href="#">清酒/烧酒</a>
+							<a href="#">龙舌兰</a>
+							<a href="#">金酒</a>
+							<a href="#">威沫</a>
+							<a href="#">梅酒</a>
+							<a href="#">进口白酒</a>
+						</li>
+						<li>
+							<h4><a href="#">进口饮用水</a></h4>
+							<a href="#" id="orange">进口果蔬汁</a>
+							<a href="#">进口碳酸饮料</a>
+							<a href="#">进口茶饮料</a>
+							<a href="#">进口功能饮料</a>
+							<a href="#" id="orange">进口茶叶</a>
+							<a href="#" id="orange">进口奶茶</a>
+							<a href="#">进口天然粉</a>
+							<a href="#">进口麦片</a>
+							<a href="#" id="orange">进口咖啡</a>
+							<a href="#">冲调果汁</a>
+							<a href="#" id="orange">进口油</a>
+						</li>
+						<li>
+									<h4><a href="#">方便速食</a></h4>
+									<a href="#">进口调味</a>
+									<a href="#">进口米</a>
+									<a href="#">烘培原料</a>
+						</li>
+					</ul>
+					<ul class="main-drop-ul" id="withoutH4">
+						<a href="#">进口牛奶</a>
+						<a href="#" id="orange">进口酸奶</a>
+						<a href="#">进口酸奶粉</a>
+						<a href="#">全脂牛奶</a>
+						<a href="#">脱脂牛奶</a>
+						<a href="#">低脂牛奶</a>
+						<a href="#">低温牛奶</a>
+						<a href="#">德国牛奶</a>
+						<a href="#">新西兰牛奶</a>
+						<a href="#">澳洲牛奶</a>
+						<a href="#">进口糕点</a>
+						<a href="#" id="orange">进口巧克力</a>
+						<a href="#">进口糖果</a>
+						<a href="#">进口果脯</a>
+						<a href="#">进口坚果</a>
+						<a href="#" id="orange">进口膨化</a>
+						<a href="#">进口葡萄酒</a>
+						<a href="#" id="orange">进口洋酒</a>
+						<a href="#">进口啤酒</a>
+						<a href="#">预调鸡尾酒</a>
+						<a href="#" id="orange">威士忌</a>
+						<a href="#">力娇酒</a>
+						<a href="#">伏特加</a>
+						<a href="#">白兰地</a>
+						<a href="#">朗姆酒</a>
+						<a href="#">清酒/烧酒</a>
+						<a href="#">龙舌兰</a>
+						<a href="#">金酒</a>
+						<a href="#">威沫</a>
+						<a href="#">梅酒</a>
+						<a href="#">进口白酒</a>
+						<a href="#" id="orange">进口果蔬汁</a>
+						<a href="#">进口碳酸饮料</a>
+						<a href="#">进口茶饮料</a>
+						<a href="#">进口功能饮料</a>
+						<a href="#" id="orange">进口茶叶</a>
+						<a href="#" id="orange">进口奶茶</a>
+						<a href="#">进口天然粉</a>
+						<a href="#">进口麦片</a>
+						<a href="#" id="orange">进口咖啡</a>
+						<a href="#">冲调果汁</a>
+						<a href="#" id="orange">进口油</a>
+						<a href="#">进口调味</a>
+						<a href="#">进口米</a>
+						<a href="#">烘培原料</a>
+					</ul>
+					<ul class="main-drop-ul" id="withoutH4">
+						<a href="#">进口牛奶</a>
+						<a href="#" id="orange">进口酸奶</a>
+						<a href="#">进口酸奶粉</a>
+						<a href="#">全脂牛奶</a>
+						<a href="#">脱脂牛奶</a>
+						<a href="#">低脂牛奶</a>
+						<a href="#">低温牛奶</a>
+						<a href="#">德国牛奶</a>
+						<a href="#">新西兰牛奶</a>
+						<a href="#">澳洲牛奶</a>
+						<a href="#">进口糕点</a>
+						<a href="#" id="orange">进口巧克力</a>
+						<a href="#">进口糖果</a>
+						<a href="#">进口果脯</a>
+						<a href="#">进口坚果</a>
+						<a href="#" id="orange">进口膨化</a>
+						<a href="#">进口葡萄酒</a>
+						<a href="#" id="orange">进口洋酒</a>
+						<a href="#">进口啤酒</a>
+						<a href="#">预调鸡尾酒</a>
+						<a href="#" id="orange">威士忌</a>
+						<a href="#">力娇酒</a>
+						<a href="#">伏特加</a>
+						<a href="#">白兰地</a>
+						<a href="#">朗姆酒</a>
+						<a href="#">清酒/烧酒</a>
+						<a href="#">龙舌兰</a>
+						<a href="#">金酒</a>
+						<a href="#">威沫</a>
+						<a href="#">梅酒</a>
+						<a href="#">进口白酒</a>
+						<a href="#" id="orange">进口果蔬汁</a>
+						<a href="#">进口碳酸饮料</a>
+						<a href="#">进口茶饮料</a>
+						<a href="#">进口功能饮料</a>
+						<a href="#" id="orange">进口茶叶</a>
+						<a href="#" id="orange">进口奶茶</a>
+						<a href="#">进口天然粉</a>
+						<a href="#">进口麦片</a>
+						<a href="#" id="orange">进口咖啡</a>
+						<a href="#">冲调果汁</a>
+						<a href="#" id="orange">进口油</a>
+						<a href="#">进口调味</a>
+						<a href="#">进口米</a>
+						<a href="#">烘培原料</a>
+					</ul>
+					<ul class="main-drop-ul" id="withoutH4">
+						<a href="#">进口牛奶</a>
+						<a href="#" id="orange">进口酸奶</a>
+						<a href="#">进口酸奶粉</a>
+						<a href="#">全脂牛奶</a>
+						<a href="#">脱脂牛奶</a>
+						<a href="#">低脂牛奶</a>
+						<a href="#">低温牛奶</a>
+						<a href="#">德国牛奶</a>
+						<a href="#">新西兰牛奶</a>
+						<a href="#">澳洲牛奶</a>
+						<a href="#">进口糕点</a>
+						<a href="#" id="orange">进口巧克力</a>
+						<a href="#">进口糖果</a>
+						<a href="#">进口果脯</a>
+						<a href="#">进口坚果</a>
+						<a href="#" id="orange">进口膨化</a>
+						<a href="#">进口葡萄酒</a>
+						<a href="#" id="orange">进口洋酒</a>
+						<a href="#">进口啤酒</a>
+						<a href="#">预调鸡尾酒</a>
+						<a href="#" id="orange">威士忌</a>
+						<a href="#">力娇酒</a>
+						<a href="#">伏特加</a>
+						<a href="#">白兰地</a>
+						<a href="#">朗姆酒</a>
+						<a href="#">清酒/烧酒</a>
+						<a href="#">龙舌兰</a>
+						<a href="#">金酒</a>
+						<a href="#">威沫</a>
+						<a href="#">梅酒</a>
+						<a href="#">进口白酒</a>
+						<a href="#" id="orange">进口果蔬汁</a>
+						<a href="#">进口碳酸饮料</a>
+						<a href="#">进口茶饮料</a>
+						<a href="#">进口功能饮料</a>
+						<a href="#" id="orange">进口茶叶</a>
+						<a href="#" id="orange">进口奶茶</a>
+						<a href="#">进口天然粉</a>
+						<a href="#">进口麦片</a>
+						<a href="#" id="orange">进口咖啡</a>
+						<a href="#">冲调果汁</a>
+						<a href="#" id="orange">进口油</a>
+						<a href="#">进口调味</a>
+						<a href="#">进口米</a>
+						<a href="#">烘培原料</a>
+					</ul>
+					<ul class="main-drop-ul" id="withoutH4">
+						<a href="#">进口牛奶</a>
+						<a href="#" id="orange">进口酸奶</a>
+						<a href="#">进口酸奶粉</a>
+						<a href="#">全脂牛奶</a>
+						<a href="#">脱脂牛奶</a>
+						<a href="#">低脂牛奶</a>
+						<a href="#">低温牛奶</a>
+						<a href="#">德国牛奶</a>
+						<a href="#">新西兰牛奶</a>
+						<a href="#">澳洲牛奶</a>
+						<a href="#">进口糕点</a>
+						<a href="#" id="orange">进口巧克力</a>
+						<a href="#">进口糖果</a>
+						<a href="#">进口果脯</a>
+						<a href="#">进口坚果</a>
+						<a href="#" id="orange">进口膨化</a>
+						<a href="#">进口葡萄酒</a>
+						<a href="#" id="orange">进口洋酒</a>
+						<a href="#">进口啤酒</a>
+						<a href="#">预调鸡尾酒</a>
+						<a href="#" id="orange">威士忌</a>
+						<a href="#">力娇酒</a>
+						<a href="#">伏特加</a>
+						<a href="#">白兰地</a>
+						<a href="#">朗姆酒</a>
+						<a href="#">清酒/烧酒</a>
+						<a href="#">龙舌兰</a>
+						<a href="#">金酒</a>
+						<a href="#">威沫</a>
+						<a href="#">梅酒</a>
+						<a href="#">进口白酒</a>
+						<a href="#" id="orange">进口果蔬汁</a>
+						<a href="#">进口碳酸饮料</a>
+						<a href="#">进口茶饮料</a>
+						<a href="#">进口功能饮料</a>
+						<a href="#" id="orange">进口茶叶</a>
+						<a href="#" id="orange">进口奶茶</a>
+						<a href="#">进口天然粉</a>
+						<a href="#">进口麦片</a>
+						<a href="#" id="orange">进口咖啡</a>
+						<a href="#">冲调果汁</a>
+						<a href="#" id="orange">进口油</a>
+						<a href="#">进口调味</a>
+						<a href="#">进口米</a>
+						<a href="#">烘培原料</a>
+					</ul>
+				</div>
+				<!-- banner轮播图 -->
+				<div class="autorun">
+					<!-- 图片 -->
+					<div class="window">
+						<ul id="img" class="clearfix">
+							<li class="show"><img src="images/111.jpg"></li>
+							<li><img src="images/222.jpg"></li>
+							<li><img src="images/333.jpg"></li>
+						</ul>
+					</div>
+					<!-- 数字 -->
+					<ul id="num">
+						<li class="show"><i class="bignum">01</i><span class="smallnum">　百元神券抢</span></li>
+						<li><span class="bignum">02</span><span class="smallnum">　乳品冲调茶</span></li>
+						<li><span class="bignum">03</span><span
+							class="smallnum">　休闲零食惠聚</span></li>
+					</ul>
+				</div>
+			</div>
+				<!-- 热门品牌 -->
+			<div class="hotsell pub clearfix">
+				<div class="hotsell-title"></div>
+				<div class="hotsell-cont">
+					<div class="hotsell-list1"><a href="#"><img src="images/101010.jpg"></a></div>
+					<div class="hotsell-list2">
+						<li><img src="images/icon1.jpg"></li>
+						<li><img src="images/icon2.jpg"></li>
+						<li><img src="images/icon3.jpg"></li>
+						<li><img src="images/icon14.jpg"></li>
+						<li><img src="images/icon5.jpg"></li>
+						<li><img src="images/icon6.jpg"></li>
+						<li><img src="images/icon7.jpg"></li>
+						<li><img src="images/icon8.jpg"></li>
+						<li><img src="images/icon3.jpg"></li>
+						<li><img src="images/icon10.jpg"></li>
+						<li><img src="images/icon11.jpg"></li>
+						<li><img src="images/icon12.jpg"></li>
+						<li><img src="images/icon13.jpg"></li>
+						<li><img src="images/icon14.jpg"></li>
+						<li><img src="images/icon15.jpg"></li>
+						<li><img src="images/icon6.jpg"></li>
+						<li><img src="images/icon7.jpg"></li>
+						<li><img src="images/icon18.jpg"></li>
+						<li><img src="images/icon14.jpg"></li>
+						<li><img src="images/icon3.jpg"></li>
+						<li><img src="images/icon1.jpg"></li>
+						<li><img src="images/icon12.jpg"></li>
+						<li><img src="images/icon13.jpg"></li>
+						<li><img src="images/icon2.jpg"></li>
+
+					</div>
+				</div>
+			</div>
+			<!-- 进口食品 -->
+			<div class="floor pub">
+				<div class="floor-title clearfix">
+					<div class="floor-name">1F 进口食品</div>
+					<div class="floor-nav">
+                        <a class="hot-word" href="#">进口食品</a>　|　
+                        <a class="hot-word" href="#">进口牛奶</a>　|　
+                        <a class="hot-word" href="#">进口酒</a>　|　
+                        <a class="hot-word" href="#">进口饼干</a>　|　
+                        <a class="hot-word" href="#">进口巧克力</a>　|　
+                        <a class="hot-word" href="#">进口油</a>
+                    </div>
+				</div>
+				<div class="floor-cont clearfix pub">
+					<div class="prod-lt">
+						<div class="prod">
+							<a href="#"><img src="images/00.jpg"></a>
+							<a href="#">斯拉夫酸奶威化1000g俄罗斯进...</a>
+							<span class="prise">￥68</span><del>￥68.0</del>
+						</div>
+						<div class="prod">
+							<a href="#"><img src="images/11.jpg"></a>
+							<a href="#">泰国 进口果汁芒果汁进口饮料...</a>
+							<span class="prise">￥69.9</span><del>￥68.0</del>
+						</div>
+						<div class="prod">
+							<a href="#"><img src="images/22.jpg"></a>
+							<a href="#">博智900g高钙燕麦植物奶【台湾直...</a>
+							<span class="prise">￥192</span><del>￥68.0</del>
+						</div>
+					</div>
+					<div class="prod-rt">
+						<div class="prod prod2">
+							<a href="#">亿滋 妙卡奥利奥松脆饼干碎牛奶巧克力234克</a>
+							<span class="prise">￥59.9</span><del>￥68.0</del>
+							<a href="#"><img src="images/2000.jpg"></a>
+						</div>
+						<div class="prod prod2" style="border-right: 0">
+							<a href="#">博智900g高钙燕麦植物奶【台湾直...</a>
+							<span class="prise">￥22.9</span><del>￥39.0</del>
+							<a href="#"><img src="images/2001.jpg"></a>
+						</div>
+						<div class="prod prod2" style="border-bottom: 0">
+							<a href="#">【大漠盛宴-绿宝石葡萄干500g】新疆特产 吐鲁番特级无核白葡萄干</a>
+							<span class="prise">￥100</span><del>￥100.0</del>
+							<a href="#"><img src="images/2002.jpg"></a>
+						</div>
+						<div class="prod prod2" style="border-right: 0;border-bottom: 0">
+							<a href="#">食为先麻辣零食大礼包一整箱吃的休闲食品肉食组合卤味小吃成人款 </a>
+							<span class="prise">￥39.8</span><del>￥109.0</del>
+							<a href="#"><img src="images/2003.jpg"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 休闲零食 -->
+			<div class="floor pub">
+				<div class="floor-title clearfix">
+					<div class="floor-name">2F 休闲零食</div>
+					<div class="floor-nav">
+                        <a class="hot-word" href="#">进口食品</a>　|　
+                        <a class="hot-word" href="#">进口牛奶</a>　|　
+                        <a class="hot-word" href="#">进口酒</a>　|　
+                        <a class="hot-word" href="#">进口饼干</a>　|　
+                        <a class="hot-word" href="#">进口巧克力</a>　|　
+                        <a class="hot-word" href="#">进口油</a>
+                    </div>
+				</div>
+				<div class="floor-cont clearfix pub">
+					<div class="prod-lt">
+						<div class="prod">
+							<a href="#"><img src="images/00.jpg"></a>
+							<a href="#">斯拉夫酸奶威化1000g俄罗斯进...</a>
+							<span class="prise">￥68</span><del>￥68.0</del>
+						</div>
+						<div class="prod">
+							<a href="#"><img src="images/11.jpg"></a>
+							<a href="#">泰国 进口果汁芒果汁进口饮料...</a>
+							<span class="prise">￥69.9</span><del>￥68.0</del>
+						</div>
+						<div class="prod">
+							<a href="#"><img src="images/22.jpg"></a>
+							<a href="#">博智900g高钙燕麦植物奶【台湾直...</a>
+							<span class="prise">￥192</span><del>￥68.0</del>
+						</div>
+					</div>
+					<div class="prod-rt">
+						<div class="prod prod2">
+							<a href="#">亿滋 妙卡奥利奥松脆饼干碎牛奶巧克力234克</a>
+							<span class="prise">￥59.9</span><del>￥68.0</del>
+							<a href="#"><img src="images/2000.jpg"></a>
+						</div>
+						<div class="prod prod2" style="border-right: 0">
+							<a href="#">博智900g高钙燕麦植物奶【台湾直...</a>
+							<span class="prise">￥22.9</span><del>￥39.0</del>
+							<a href="#"><img src="images/2001.jpg"></a>
+						</div>
+						<div class="prod prod2" style="border-bottom: 0">
+							<a href="#">【大漠盛宴-绿宝石葡萄干500g】新疆特产 吐鲁番特级无核白葡萄干</a>
+							<span class="prise">￥100</span><del>￥100.0</del>
+							<a href="#"><img src="images/2002.jpg"></a>
+						</div>
+						<div class="prod prod2" style="border-right: 0;border-bottom: 0">
+							<a href="#">食为先麻辣零食大礼包一整箱吃的休闲食品肉食组合卤味小吃成人款 </a>
+							<span class="prise">￥39.8</span><del>￥109.0</del>
+							<a href="#"><img src="images/2003.jpg"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 茶饮冲调 -->
+			<div class="floor pub">
+				<div class="floor-title clearfix">
+					<div class="floor-name">3F 茶饮冲调</div>
+					<div class="floor-nav">
+                        <a class="hot-word" href="#">进口食品</a>　|　
+                        <a class="hot-word" href="#">进口牛奶</a>　|　
+                        <a class="hot-word" href="#">进口酒</a>　|　
+                        <a class="hot-word" href="#">进口饼干</a>　|　
+                        <a class="hot-word" href="#">进口巧克力</a>　|　
+                        <a class="hot-word" href="#">进口油</a>
+                    </div>
+				</div>
+				<div class="floor-cont clearfix pub">
+					<div class="prod-lt">
+						<div class="prod">
+							<a href="#"><img src="images/00.jpg"></a>
+							<a href="#">斯拉夫酸奶威化1000g俄罗斯进...</a>
+							<span class="prise">￥68</span><del>￥68.0</del>
+						</div>
+						<div class="prod">
+							<a href="#"><img src="images/11.jpg"></a>
+							<a href="#">泰国 进口果汁芒果汁进口饮料...</a>
+							<span class="prise">￥69.9</span><del>￥68.0</del>
+						</div>
+						<div class="prod">
+							<a href="#"><img src="images/22.jpg"></a>
+							<a href="#">博智900g高钙燕麦植物奶【台湾直...</a>
+							<span class="prise">￥192</span><del>￥68.0</del>
+						</div>
+					</div>
+					<div class="prod-rt">
+						<div class="prod prod2">
+							<a href="#">亿滋 妙卡奥利奥松脆饼干碎牛奶巧克力234克</a>
+							<span class="prise">￥59.9</span><del>￥68.0</del>
+							<a href="#"><img src="images/2000.jpg"></a>
+						</div>
+						<div class="prod prod2" style="border-right: 0">
+							<a href="#">博智900g高钙燕麦植物奶【台湾直...</a>
+							<span class="prise">￥22.9</span><del>￥39.0</del>
+							<a href="#"><img src="images/2001.jpg"></a>
+						</div>
+						<div class="prod prod2" style="border-bottom: 0">
+							<a href="#">【大漠盛宴-绿宝石葡萄干500g】新疆特产 吐鲁番特级无核白葡萄干</a>
+							<span class="prise">￥100</span><del>￥100.0</del>
+							<a href="#"><img src="images/2002.jpg"></a>
+						</div>
+						<div class="prod prod2" style="border-right: 0;border-bottom: 0">
+							<a href="#">食为先麻辣零食大礼包一整箱吃的休闲食品肉食组合卤味小吃成人款 </a>
+							<span class="prise">￥39.8</span><del>￥109.0</del>
+							<a href="#"><img src="images/2003.jpg"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 酒水饮料 -->
+			<div class="floor pub">
+				<div class="floor-title clearfix">
+					<div class="floor-name">4F 酒水饮料</div>
+					<div class="floor-nav">
+                        <a class="hot-word" href="#">进口食品</a>　|　
+                        <a class="hot-word" href="#">进口牛奶</a>　|　
+                        <a class="hot-word" href="#">进口酒</a>　|　
+                        <a class="hot-word" href="#">进口饼干</a>　|　
+                        <a class="hot-word" href="#">进口巧克力</a>　|　
+                        <a class="hot-word" href="#">进口油</a>
+                    </div>
+				</div>
+				<div class="floor-cont clearfix pub">
+					<div class="prod-lt">
+						<div class="prod">
+							<a href="#"><img src="images/00.jpg"></a>
+							<a href="#">斯拉夫酸奶威化1000g俄罗斯进...</a>
+							<span class="prise">￥68</span><del>￥68.0</del>
+						</div>
+						<div class="prod">
+							<a href="#"><img src="images/11.jpg"></a>
+							<a href="#">泰国 进口果汁芒果汁进口饮料...</a>
+							<span class="prise">￥69.9</span><del>￥68.0</del>
+						</div>
+						<div class="prod">
+							<a href="#"><img src="images/22.jpg"></a>
+							<a href="#">博智900g高钙燕麦植物奶【台湾直...</a>
+							<span class="prise">￥192</span><del>￥68.0</del>
+						</div>
+					</div>
+					<div class="prod-rt">
+						<div class="prod prod2">
+							<a href="#">亿滋 妙卡奥利奥松脆饼干碎牛奶巧克力234克</a>
+							<span class="prise">￥59.9</span><del>￥68.0</del>
+							<a href="#"><img src="images/2000.jpg"></a>
+						</div>
+						<div class="prod prod2" style="border-right: 0">
+							<a href="#">博智900g高钙燕麦植物奶【台湾直...</a>
+							<span class="prise">￥22.9</span><del>￥39.0</del>
+							<a href="#"><img src="images/2001.jpg"></a>
+						</div>
+						<div class="prod prod2" style="border-bottom: 0">
+							<a href="#">【大漠盛宴-绿宝石葡萄干500g】新疆特产 吐鲁番特级无核白葡萄干</a>
+							<span class="prise">￥100</span><del>￥100.0</del>
+							<a href="#"><img src="images/2002.jpg"></a>
+						</div>
+						<div class="prod prod2" style="border-right: 0;border-bottom: 0">
+							<a href="#">食为先麻辣零食大礼包一整箱吃的休闲食品肉食组合卤味小吃成人款 </a>
+							<span class="prise">￥39.8</span><del>￥109.0</del>
+							<a href="#"><img src="images/2003.jpg"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 粮油米面 -->
+			<div class="floor pub">
+				<div class="floor-title clearfix">
+					<div class="floor-name">5F 粮油米面</div>
+					<div class="floor-nav">
+                        <a class="hot-word" href="#">进口食品</a>　|　
+                        <a class="hot-word" href="#">进口牛奶</a>　|　
+                        <a class="hot-word" href="#">进口酒</a>　|　
+                        <a class="hot-word" href="#">进口饼干</a>　|　
+                        <a class="hot-word" href="#">进口巧克力</a>　|　
+                        <a class="hot-word" href="#">进口油</a>
+                    </div>
+				</div>
+				<div class="floor-cont clearfix pub">
+					<div class="prod-lt">
+						<div class="prod">
+							<a href="#"><img src="images/00.jpg"></a>
+							<a href="#">斯拉夫酸奶威化1000g俄罗斯进...</a>
+							<span class="prise">￥68</span><del>￥68.0</del>
+						</div>
+						<div class="prod">
+							<a href="#"><img src="images/11.jpg"></a>
+							<a href="#">泰国 进口果汁芒果汁进口饮料...</a>
+							<span class="prise">￥69.9</span><del>￥68.0</del>
+						</div>
+						<div class="prod">
+							<a href="#"><img src="images/22.jpg"></a>
+							<a href="#">博智900g高钙燕麦植物奶【台湾直...</a>
+							<span class="prise">￥192</span><del>￥68.0</del>
+						</div>
+					</div>
+					<div class="prod-rt">
+						<div class="prod prod2">
+							<a href="#">亿滋 妙卡奥利奥松脆饼干碎牛奶巧克力234克</a>
+							<span class="prise">￥59.9</span><del>￥68.0</del>
+							<a href="#"><img src="images/2000.jpg"></a>
+						</div>
+						<div class="prod prod2" style="border-right: 0">
+							<a href="#">博智900g高钙燕麦植物奶【台湾直...</a>
+							<span class="prise">￥22.9</span><del>￥39.0</del>
+							<a href="#"><img src="images/2001.jpg"></a>
+						</div>
+						<div class="prod prod2" style="border-bottom: 0">
+							<a href="#">【大漠盛宴-绿宝石葡萄干500g】新疆特产 吐鲁番特级无核白葡萄干</a>
+							<span class="prise">￥100</span><del>￥100.0</del>
+							<a href="#"><img src="images/2002.jpg"></a>
+						</div>
+						<div class="prod prod2" style="border-right: 0;border-bottom: 0">
+							<a href="#">食为先麻辣零食大礼包一整箱吃的休闲食品肉食组合卤味小吃成人款 </a>
+							<span class="prise">￥39.8</span><del>￥109.0</del>
+							<a href="#"><img src="images/2003.jpg"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+        </main>
+        <!-- 尾部 -->
+        <footer>
+        	<!-- 优 7 特 帮 -->
+        	<div class="footer-img-wrap pub">
+       			<img src="images/footer.jpg" class="footer-img">
+       		</div>
+       		<div class="shopping-tips pub clearfix">
+       			<ul>
+       				<p>购物指南</p>
+       				<li><a href="#">免费注册</a></li>
+       				<li><a href="#">开通支付宝</a></li>
+       				<li><a href="#">支付宝充值</a></li>
+       			</ul>
+       			<ul>
+       				<p>天猫保障</p>
+       				<li><a href="#">发票保障</a></li>
+       				<li><a href="#">售后规则</a></li>
+       				<li><a href="#">缺货赔付</a></li>
+       			</ul>
+       			<ul>
+       				<p>支付方式</p>
+       				<li><a href="#">快捷支付</a></li>
+       				<li><a href="#">信用卡</a></li>
+       				<li><a href="#">余额宝</a></li>
+       				<li><a href="#">蚂蚁花呗</a></li>
+       				<li><a href="#">货到付款</a></li>
+       			</ul>
+       			<ul>
+       				<p>商家服务</p>
+       				<li><a href="#">天猫规则</a></li>
+       				<li><a href="#">商家入驻</a></li>
+       				<li><a href="#">商家中心</a></li>
+       				<li><a href="#">天猫智库</a></li>
+       				<li><a href="#">物流服务</a></li>
+       				<li><a href="#">喵言喵语</a></li>
+       				<li><a href="#">运营服务</a></li>
+       			</ul>
+       			<ul>
+       				<p>手机天猫</p>
+       				<div><img src="images/TB14VZKHXXXXXcAXXXX64VRZFXX-105-105.png" alt=""></div>
+       			</ul>
+       			<i class="iconfont icon-tianmaoxingxiang1"></i>
+       		</div>
+       		<div class="footer">
+       			<div class="pub">
+					<li style="margin-bottom: 10px">
+						<a href="#">关于天猫</a><a href="#">帮助中心</a><a href="#">开放平台</a><a href="#">诚聘英才</a><a href="#">联系我们</a><a href="#">网站合作</a><a href="#">法律声明</a><a href="#">隐私权策略</a><a href="#">知识产权</a><a href="#">廉政举报</a>
+					</li>
+					<li>
+						<a href="#">阿里巴巴集团</a> | <a href="#">淘宝网</a> | <a href="#">天猫</a> | <a href="#">聚划算</a> | <a href="#">全球速卖通</a> | <a href="#">阿里巴巴国际交易市场</a> | <a href="#">1688</a> | <a href="#">阿里妈妈</a> | <a href="#">飞猪</a> | <a href="#">阿里云计算</a> | <a href="#">AliOS</a> | <a href="#">阿里通信</a> | <a href="#">万网</a> | <a href="#">高德</a> | <a href="#">UC</a> | <a href="#">友盟</a> | <a href="#">虾米</a> | <a href="#">钉钉</a> | <a href="#">支付宝</a>
+					</li>
+					<li>
+						<i>增值电信业务经营许可证： <a href="#">浙B2-20110446</a></i>
+						<i> 网络文化经营许可证：<a href="#">浙网文[2015]0295-065号</a></i>
+						<i><a href="">12318举报</a></i>
+						<i>出版物网络交易平台服务经营备案证： <a href="#">新出发浙备字第001号</a></i>
+					</li>
+					<li><i>互联网违法和不良信息举报电话：0571-81683755 blxxjb@alibaba-inc.com</i><i>互联网药品信息服务资质证书编号：<a href="#">浙-（经营性）-2017-0005</a></i><i><a href="#"><img src="images/TB1yEqRPXXXXXXPXpXXXXXXXXXX-20-20.png"></a><a href="#"> 浙公网安备 33010002000120号</a></i></li>
+					<li>（浙）网械平台备字[2018]第00002号</li>
+					<li>© 2003-2018 TMALL.COM 版权所有</li>
+					<a href="#" style="padding-right: 10px"><img src="images/TB1j5gtHXXXXXXjaXXXydRxIFXX-73-30.jpg"></a><a href="#"><img src="images/TB13mgzHXXXXXbjXVXXzby4IVXX-80-30.jpg" ></a>
+				</div>
+			</div>
+        </footer>
+    </div>
+       <!-- 工具条 -->
+    <div class="toolbar-wrap">
+        <div class="toolbar">
+            <div class="toolbar-1">
+                <div>
+                    <img src="images/aaa.png"/>
+                    <div class="tool-drop">会员权益<div class="triangle3">◆</div></div>
+                </div>
+                <div class="cart">
+                    <i class="iconfont icon-tianmaochaoshigouwuche"></i>
+                    <p>购物车</p>
+                </div>
+                <div>
+                    <img src="images/dddddddd.png"/>
+                    <div class="tool-drop">我的资产<div class="triangle3">◆</div></div>
+                </div>
+                <div>
+                    <i class="iconfont icon-shoucang2"></i>
+                    <div class="tool-drop">我的收藏<div class="triangle3">◆</div></div>
+                </div>
+                <div>
+                    <img src="images/gggggggggg.png"/>
+                    <div class="tool-drop">我看过的<div class="triangle3">◆</div></div>
+                </div>
+                <div>
+                    <img src="images/cccccccc.png"/>
+                    <div class="tool-drop">我要充值<div class="triangle3">◆</div></div>
+                </div>
+            </div>
+        </div>
+        <div class="toolbar2">
+            <div>
+                <i class="iconfont icon-bianji"></i>
+                <div class="tool-drop">用户反馈<div class="triangle3">◆</div></div>
+            </div>
+            <div class="app-download">
+                <i class="iconfont icon-erweima"></i>
+                <div class="download">
+                    <img src="images/erweima.png">
+                    <img src="images/xiazai.png">
+                </div>
+            </div>
+            <div id="toTop">
+                <i class="iconfont icon-top"></i>
+                <div class="tool-drop">返回顶部<div class="triangle3">◆</div></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,403 @@
+/*首页*/
+.index{width: 100%;background: #f5f5f5;}
+
+/*固定宽度*/
+.pub{margin:0 auto;width: 1230px;}
+
+/*固定导航栏*/
+#nav_fixed{display: none;position: fixed;z-index:1000;top: 0;width: 100%;height: 50px;background: #ff0036;}
+.nav-logo{float: left;}
+.nav-search{float: left;width: 750px;height: 30px;margin:10px 0 5px 150px;}
+.searchcont{float:left;width: 650px;height: 30px;border:0;padding:10px;}
+.nav-button{float:left;border:0;width: 100px;height: 30px;font-size: 16px;line-height: 30px;background: #ff0036;color: #fff;}
+
+/*导航栏*/
+nav{background: #f2f2f2;border-bottom:1px solid #e5e5e5;}
+.nav{height: 32px;position: relative;z-index: 999;color:#999;}
+.nav a:hover{color: #ff0036;}
+.nav-lt{float: left;line-height: 32px;}
+.nav-lt>p>a{padding-left: 15px;}
+.nav-rt{height: 32px;float: right}
+.nav-rt>li{float: left;margin: 0 8px;line-height: 32px;}
+
+/*小三角形*/
+.triangle{position: absolute;top: 16px;margin:0 2px;display: inline-block;width: 0;height: 0;border: 3px solid #bbb;border-left: 3px solid transparent;border-right: 3px solid transparent;border-bottom: 3px solid transparent;cursor: pointer;}
+.nav-rt>li:hover .triangle{transform: rotate(180deg);transition:.3s;top: 11.5px;}
+
+/*导航栏子菜单公共样式*/
+.drop{position: relative;}
+.drop .drop-li{position: relative;z-index: 2;padding:0 8px;border-left: 1px solid transparent;border-right: 1px solid transparent}
+.drop-list{position: absolute;top: 32px;left: 0;padding:0 8px;box-sizing: border-box;background: #fff;border:1px solid #e5e5e5;display: none;}
+.drop:hover .drop-list{display: block;}
+.drop-list a{display: block;height: 25px;color:#666;line-height: 25px;}
+.drop a:hover{text-decoration: underline;}
+.drop:hover .drop-li{background: #fff;border:1px solid #e5e5e5;border-top:0;border-bottom:1px solid #fff;}
+.drop:hover .drop-li a{text-decoration: underline;color: #ff0036}
+.nav i{color: #ff0036;}
+
+/*我的淘宝+收藏夹*/
+#mytaobao,#collect{width: 100px;}
+
+/*手机天猫二维码*/
+.QR_Code{width: 100px;position: absolute;left: -50px;top: 26px;width: 175px;height: 225px;box-shadow: 2px 2px 6px #ccc;background:#fff;display: none;}
+.triangle2{position: absolute;top: -10px;left: 80px;width: 0;height: 0;border: 5px solid #fff;border-left: 5px solid transparent;border-right: 5px solid transparent;border-top: 5px solid transparent;}
+.drop:hover .QR_Code{display: block;}
+
+/*商家支持*/
+.drop #support-menu{position: absolute;left:-69px;width: 135px;border:1px solid #e5e5e5;padding:8px 8px;}
+#support-menu div{border-bottom: 1px dotted #000;}
+#support-menu div>a{display: inline-block;}
+#support-menu div h4{color: #555;}
+
+/*网站导航*/
+.drop #nav-droplist{width: 1198px;position: absolute;top: 32px;left: -1114px;}
+#nav-droplist div a{display: inline-block;}
+#nav-droplist .tab1 a{padding-right: 35px;}
+#nav-droplist .tab2 a{padding-right: 55px;}
+#nav-droplist .tab3 a{padding-right: 40px;}
+.tab1,.tab2,.tab3{float: left;padding-left: 30px;}
+.tab1{width: 455px;}
+.tab2{width: 455px;}
+.tab3{width:250px;}
+#new{color: #23EC6C;font-size: 10px;}
+#hot{color: #ff0036;font-size: 10px;}
+#nav-droplist #line{float:left;width: 0;height: 110px;border-left: 1px solid #e5e5e5;margin-top: 30px;}
+#nav-droplist div h3{font-size: 16px;font-weight: 100;margin-top:30px;}
+.tab1 h3{color: #f56a00;}
+.tab2 h3{color: #2263d4;}
+#nav-droplist .line{width: 0;height: 140px;border-right: 1px solid #eee;margin-top:30px;}
+/*-----------------------头------------------------*/
+/*-----------------------部------------------------*/
+.headerbox{height:130px;background:#fff;}
+/*天猫logo*/
+.logo{float:left;width:240px;height:130px;background:url(../images/tmall_logo.png) no-repeat -20px;background-size: cover;}
+
+/*搜索框*/
+.searchbox{width:625px;margin-left: 100px;float:left;margin-top:40px;}
+.searchbox input{outline: none;}
+.search .searchcontent{width: 491px;height:40px;border:2px solid #ff0036;padding:0 10px;font: 16px/22px arial;box-sizing: border-box;}
+.search .button{width: 130px;height: 40px;border:0;background: #ff0036;color: #fff;font: bold 18px/40px arial;vertical-align:bottom;cursor: pointer}
+.keyword{padding-top: 5px;}
+.keyword>a{height: 20px;line-height: 20px;font-size: 14px;color: #999}
+.keyword .red{color: #ff0036}
+
+/*改变搜索框默认文本字体样式*/
+input:focus::placeholder{color: #999;font-size: 15px}
+input::placeholder{color: #000;font-size: 15px}
+
+/*---------------------------主体----------------------*/
+/*---------------------------部分----------------------*/
+
+/*类目导航栏*/
+.menu-nav-box{width: 100%;background: #fff}
+.menu-nav-list>a{display: inline-block;width: 200px;height: 35px;background: #ff0036;color: #fff;font:bold 16px/35px "Microsoft YaHei";padding-left: 10px;}
+.menu-nav-box>a>i{padding-right: 10px;}
+.menu-nav-header {border-bottom:1px solid #ff0036;margin: 0 auto;position: relative;z-index: 50;height: 35px;line-height: 35px;color: #333;font-size: 18px;}
+
+/*主体部分导航栏*/
+.menu-nav{width: 1030px;}
+.menu-nav-rt>a{display:inline-block;height: 35px;font: 500 16px/35px "Microsoft YaHei";color: #333;padding: 0 8px;}
+.menu-nav-rt>a>img{width:100px;vertical-align: middle;}
+.menu-nav-list{position: relative;z-index: 50;float: left;width: 200px;height: 35px;color: #fff;background: #068ad4;}
+.menu-nav-list>a>i{padding-right: 10px;}
+.fenlei{display: block;width: 200px;height: 35px;color: #fff;background: #ff0036;padding-left: 10px;}
+.fenlei i{padding-right: 10px;}
+
+/*侧边栏菜单*/
+.menu-nav-wrap{width: 1230px;position: relative;}
+.menu-nav-left {position:absolute;top:0;left:0;z-index:50;width: 200px;height: 500px;}
+.menu-nav-left dl{background: rgba(0, 0, 0, 0.55);}
+.menu-nav-left dl dd {padding-left: 10px;height: 31.2px;line-height: 31.2px;font-size: 14px;}
+.menu-nav-left dl dd>a {height: 30px;line-height: 30px;font-size: 14px;color:#fff;}
+.menu-nav-left dl dd i{padding-right: 10px;color: #999}
+.menu-nav-left dl .current{background: #fff;}
+
+.se-1:hover >a,.se-1:hover i,.se-1:hover .hot-a{
+	color: #e54077!important;
+}
+.se-2:hover >a,.se-2:hover i,.se-2:hover .hot-a{
+	color: #427def!important;
+}
+.se-3:hover >a,.se-3:hover i,.se-3:hover .hot-a{
+	color: #6347ed!important;
+}
+.se-4:hover >a,.se-4:hover i,.se-4:hover .hot-a{
+	color: #fa5c5c!important;
+}
+.se-5:hover >a,.se-5:hover i,.se-5:hover .hot-a{
+	color: #f7a831!important;
+}
+.se-6:hover >a,.se-6:hover i,.se-6:hover .hot-a{
+	color: #dd2727!important;
+}
+.se-7:hover >a,.se-7:hover i,.se-7:hover .hot-a{
+	color: #3bc7b0!important;
+}
+
+/*侧边栏菜单隐藏子菜单*/
+.menu-product {display: none;position: absolute;top: 0;left: 200px;width: 850px;background:#fff;height:500px;padding:10px;overflow: hidden;font-size: 14px;line-height: 2em;background: #fff;z-index: 100002;}
+.menu-product li {float: left;color:#999;line-height: 1em;}
+.menu-product li a{color: #222;height:22px;line-height: 22px;font-size: 14px;margin-left: 13px;}
+.proname,.proname-list{display: inline-block;margin-right: 10px;}
+.proname{vertical-align: top;color: #000;padding-top: 14px;}
+.proname-list{width:490px;color:#999;border-bottom: 1px dashed;padding:10px 0;}
+.product_list,.product_logo{float: left;}
+.product_list{width: 600px}
+.product_logo{width: 200px;height: 480px;background: #fff;margin-left: 30px;padding:7px;}
+.product_logo a{width: 90px;display: inline-block;}
+.product_logo a img{width: 100%}
+.logo-li{width: 200px}
+.logo-li img{width: 100%}
+
+/*轮播图-------------------------------------------------------------*/
+.slide{width: 100%;height: 500px;background: #E71367}
+.box{position: relative;}
+.img{position: relative;width:1130px;height: 500px;top: 0;right: -100px;overflow: hidden;}
+.img>li{position: absolute;z-index: 3;width:100%;height: 500px;top: 0;left: 0;display: none}
+
+.banner{position: absolute;top: 10px;right: 0;width: 220px;height: 480px;}
+.banner li{width: 100%;height: 235px;background: #fff;z-index: 100000;opacity: .8}
+.banner li img{width: 100%}
+.banner li:hover{opacity: 1;transition: .5s}
+
+/*数字小块*/
+.num{width: 250px;height:5px;position: absolute;z-index: 22;left:45%;bottom: 3%;}
+.num>li{float: left;width: 25px;height: 5px;margin:0 5px;background: #333;opacity: .6;cursor: pointer;}
+
+/*轮播图+数字小块li鼠标移入样*/
+.img .show{display:block;}
+.num .show{background: #fff;display: block;}
+
+/*---------------------主体部分---------------------*/
+/*----------------------广告区----------------------*/
+/*狂暑季*/
+.main-body{margin-top: 30px;}
+.main-body img:hover{opacity: .6;}
+.summer>img:first-child{display: block;margin:0 auto 20px;width: 600px;height: 40px;}
+.summer>a{float: left;display: block;width: 238px;height: 269px;margin-right: 10px;}
+.summer>a>img{width: 100%;}
+.title-inner-cont{display: block;width: 100%;}
+.title-inner-cont i{display: inline-block;}
+.title-inner-cont .title{display: inline-block;text-align: center;margin-bottom: 10px;height:10px;line-height: 18px;}
+.title-cont~a{float: left;display: block;width: 238px;height: 129.9px;margin-right: 10px;}
+.title-cont~a>img{width: 100%}
+.title-inner-cont{text-align:center;width: 100%;height: 40px;line-height: 40px;vertical-align: top;}
+.title-inner-cont .title{font-size: 20px;color: #ff0036;font-weight: 500}
+.title-inner-cont .iconfont{color: #ff0036;font-size: 20px;}
+
+
+/*品牌广告*/
+.brand{width: 234px;height: 370px;overflow: hidden;margin-top: 30px}
+.channel,.activity{width: 485px;height: 370px;overflow: hidden;margin-top: 30px}
+.channel{margin:30px 13px 0 13px;}
+.brand,.channel,.activity{float: left;}
+
+/*广告头公共样式*/
+.head{height:54px;background: #fff;position: relative;}
+.cn{height: 54px;line-height: 54px;display: inline-block;font-size: 18px;font-weight: bold;color: #333;margin-left: 10px;}
+.en{height: 54px;line-height: 54px;display: inline-block;font-size: 14px;font-weight: bold;color: #333;margin-left: 10px;}
+.head>a{display: inline-block;position: absolute;top: 0;right: 14px;height: 54px;font-weight: 42px;line-height: 54px;}
+.head>a>i{font-size: 22px;color: #666;}
+.brand>a>img,.activit>a>img{height: 316px;}
+.channel>a>img{width: 485px;}
+/*翻转照片墙*/
+/*27格处理*/
+#iconWall{width: 100%;overflow: hidden;padding-top: 1px;}
+#iconWall li{width: 122px;height: 108px;float: left;margin-right: 1px;margin-bottom: 1px;position: relative;}
+
+/*3D反转区域处理 */
+.img-back,.img-front{position: absolute;left: 0;top: 0;background: #fff;width: 122px;height: 108px;text-align: center;line-height: 108px;}
+.img-3d{transform-style: preserve-3d;}
+.img-back{transform: rotateY(180deg);}
+
+/*换一批*/
+#btnRefresh{text-align: center;transition: .3s linear;background: #fff;}
+.iconRefresh{width: 28px;height: 28px;background: url("../images/refresh.png");margin: 32px auto 0;}
+#btnRefresh:hover{color: #fff;background: #ff0036;transition: .3s;}
+#btnRefresh:hover .iconRefresh{background: url("../images/refresh-white.png");transition:.3s linear;transform:rotate(360deg);}
+
+/*处理浮层*/
+.mask{position: absolute;left: 0;top: 0;width: 122px;height: 108px;background: #000;opacity: 0;}
+.mask img{float: right;margin-top: 8px;margin-right: 8px;}
+.mask p{cursor:pointer;font-size: 12px;color: #fff;margin-top: 35px;text-align: center;}
+.mask a{color: #fff;font-size: 12px;background: #f00;width: 63px;display: block;margin: 0 auto;text-align: center;height: 18px;line-height: 15px;border-radius: 9px;opacity: 1;margin-top: 10px}
+.mask a:hover{color: #fff;}
+#iconWall li:hover .mask{opacity:.8;transition: .3s linear;}
+
+/*-------------------------天猫超市-----------------------*/
+.floor-tab-content{overflow: hidden;}
+.floor-line-con{margin-top: 20px;width: 100%;height: 665px;position: relative;}
+.floor-name{display: inline-block;vertical-align: middle;height: 28px;margin-bottom: 10px;}
+.floor-line-con .floor-name img{vertical-align: middle;width: 214px;height: 25px;}
+.hot-word-con{position: absolute;top: 0;right: 0;width: 800px;text-align: right;}
+.hot-word-con  a{color: #000;display: inline-block;height: 20px;line-height: 20px;margin: 5px 10px;font-size: 14px;border: none;border-bottom: 1px solid #f5f5f5}
+.hot-word-con  a:hover{color: #000;border-bottom: 1px solid #000}
+
+/*公共样式*/
+.line-body .grid {float: left;display: block;position: relative;background: #fff;margin-bottom: 13px;border: 1px solid transparent;}
+
+/*左边*/
+.big-banner-con{float: left;position: relative;width: 235px;height: 618px;}
+.big-banner-con img{width: 235px;height: 618px}
+.big-banner-coimg{display: block;height: 618px;}
+.banner-detail{position: absolute;vertical-align: middle;bottom: 20%;width: 218px;height: 64px;}
+.left-title-wrap{width: 70px;height: 64px;color: #fff;text-align: center;display: table-cell;vertical-align: middle;background: rgba(0, 0, 0, 0.9);}
+.left-title-wrap .left-title{display: inline-block;vertical-align: middle;line-height: 24px;font-size: 18px;width: 36px;}
+.right-title-wrap{left: 70px;top: 0px;position: absolute;width: 128px;height: 64px;color: #fff;vertical-align: middle;background: rgba(0, 0, 0, 0.6);}
+.right-title-absolute {margin-top: 8px;margin-left: 14px;}
+.right-title-absolute .right-title {display: block;line-height: 24px;font-size: 18px;vertical-align: middle}
+.big-banner-con .detail-wrap{position: absolute;bottom: 25px;right: 15px;width: 35px;height: 35px;}
+.detail-wrap i{font-size: 35px;color: #fff}
+
+/*右边*/
+.middle-column-con{width: 995px;height: 618px;float: left;overflow: hidden;}
+
+/*天猫超市小轮播样式*/
+.two-grid{width: 485px;height: 301px;margin-left: 13px;}
+.two-grid .floor-tabs {width: 462px;height: 282px;margin: 10px;box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.09);}
+.floor-tab-head{overflow: hidden;background: #F1F1F1;}
+.floor-tab-head li{float: left;width: 231px;height: 57px;line-height: 30px;cursor: pointer;padding:0 20px;text-align: center;vertical-align: middle;color: #000;}
+.floor-tab-head .tab-title{margin-top: 16px;font-size: 18px;line-height: 20px;}
+.floor-tab-content{position: relative;width: 462px;height: 265px;}
+.floor-tab-content>div>img{width:200px;height: 200px;position: absolute;top: 15px;right: 30px}
+.lineone{height: 40px;line-height: 40px;}
+.bgreen{font-size: 22px;color: #00B262;font-weight: bold;margin-left: 10px;line-height: 50px;height: 50px;}
+.crazy,.limit{background:url(../images/bg.png) no-repeat;width: 291px;height:87px;position: absolute;top: 90px;left: 0;padding-left: 20px;}
+.lineone{font-size: 20px;color: #000;font-weight: 500}
+.floor-tab-head .floor-current-tab{background: #00B262;color: #fff;}
+
+.one-grid-price{width: 236px;height:302px;margin-left:12px;}
+.floor-item-content-wrap{text-align: center;}
+.one-grid-price:hover{border: 1px solid #ff0036;}
+.floor-item-content-wrap img{width: 185px;height: 185px;margin-top: 20px;}
+.floor-item-title {width: 135px;height: 40px;font-size: 14px;color: #333;line-height: 20px;overflow: hidden;margin: 8px auto;}
+.floor-line-con .floor-price{font-size: 18px;color: #ff0036;line-height: 18px;margin: 10px auto;}
+
+/*------------------------天猫国际------------------------*/
+#big-banner-con2{width: 236px;height: 302px;float: left;position: relative}
+#big-banner-con2 img{width: 100%}
+#big-banner-con2 .detail-wrap{position: absolute;bottom: 25px;right: 15px;width: 35px;height: 35px;}
+
+/*------------------------给老公抢一件咳咳------------------------*/
+.full-banner{overflow: hidden;}
+.full-banner img {display: block;width: 1620px;height: 90px;margin-left: -165px;}
+
+/*-----------------------------自然堂----------------------------*/
+/*鼠标移入图片效果*/
+.floors img:hover{opacity: .6}
+
+/*------------------------美丽人生------------------------*/
+/*小方块*/
+.square{display: inline-block;background-color: #333;width: 5px;height: 18px;margin-right: 10px}
+.square+span{font-size: 18px;color: #000;}
+.square+span+span{font-size: 14px;color: #000;margin-left: 10px;line-height: 24px;}
+
+/*------------------------重复------------------------*/
+/*------------------------广告------------------------*/
+
+/*猜你喜欢*/
+.ifyoulike{font-size: 18px;margin-top: 30px;text-align: center;}
+.ifyoulike>div:first-child{padding-bottom:10px;}
+.ifyoulike i{font-size: 20px;color: #ff0036;font-weight: 600}
+.ifyoulike .floor-price {font-size: 18px;color: #ff0036;line-height: 18px;margin: 10px auto;}
+
+/*喵*/
+.miao{margin-bottom:10px;}
+.miao img{display:block;width: 80px;margin:0 auto;}
+
+/*------------------------尾部------------------------*/
+/*------------------------footer----------------------*/
+footer{background: #fff;border-top: 1px solid #ccc}
+.footer-img-wrap{margin: 25px auto;border-bottom: 1px solid #e5e5e5}
+footer .footer-img{margin:0 auto 20px auto;}
+.shopping-tips{position: relative;}
+.shopping-tips ul{float: left;width: 238px;padding:0 0 25px 50px;}
+.shopping-tips ul li a{width: 100px;color: #8b8b8b;height: 20px;line-height: 20px}
+.shopping-tips ul p{font-size: 16px;line-height: 30px;color: #646464;font-weight: 700;}
+.footer{padding: 10px}
+.footer li{line-height: 25px}
+.footer li a:hover{color: #999}
+.footer{background: #000;border-top:2px solid #ff0036}
+.footer li:first-child a,.footer li:first-child+li a{color:#fff;margin-right: 5px;}
+.footer li:first-child+li{color: #fff;}
+.footer li:first-child+li~li i{margin-right: 50px;}
+.footer li a>img{vertical-align: top;}
+.shopping-tips i{font-size: 70px;color:#000;position: absolute;bottom: -42px;left: 40px}
+
+
+/*-----------------------楼层--------------------------*/
+.floor{position: fixed;bottom: 50px;left:50%;opacity: 0;margin-left: -660px;}
+.floor>a{position: relative;display: block;width: 36px;height: 36px;line-height: 36px;padding:2px;text-align: center;color: #fff;margin-top: 1px;background-color: rgba(0, 0, 0, 0.6);margin-top: 1px;display: block;font-style: normal;}
+.floor>a:hover{color: #fff}
+.floor-nav{background: #ff0036;color: #fff;width: 36px;height: 36px;;line-height: 36px;text-align: center;}
+.floor-nav-name{line-height: 15px;width: 24px;margin:0 auto;}
+.floor>a:nth-child(10){background: rgba(0,0,0,.3);}
+
+/*------------------右侧固定工具条--------------------------*/
+/*100%高度*/
+.toolbar-wrap{width: 35px;height: 100%;position: fixed;top: 0;right: 0;z-index: 999999999999999999;text-align: center;background:#000;}
+
+.toolbar{position: absolute;top: 35%;right:0;width: 35px;}
+.toolbar i{color: #fff;font-size: 20px}
+.toolbar-1>div{width: 35px;height: 35px;margin: 10px 0;color: #fff;cursor: pointer;line-height: 35px;text-align: center;position: relative;}
+.tool-drop{top: 0px;left: -120px;width: 90px;height: 35px;color: #fff;opacity: 0;visibility: hidden;line-height: 35px;position: absolute;text-align: center;background-color: #494949;transition: all .5s;box-shadow: 0 0 5px rgba(0,0,0,.2);}
+.triangle3{top: -35px;right: -44px;color: #494949;font-size: 35px;position: relative;}
+.toolbar-1>div:hover{background-color: rgba(255,0,0,.8);}
+.toolbar-1>div:hover .tool-drop{left: -90px;opacity: 1;visibility: visible;}
+.toolbar-1>div:hover i{color: #fff;}
+.toolbar-1>div i{font-size: 21px;font-style: normal;}
+.cart{margin: 5px 0px!important;height: auto!important;}
+.cart>i{color: red;}
+.cart>p{top: -5px;left: 7px;width: 20px;height: 55px;display: block;font-size: 13px;line-height: 1.5;overflow: hidden;position: relative;}
+
+/*下面弎*/
+.toolbar2{position: absolute;bottom: 0;right: 0;text-align: center;color: #fff;font-weight: }
+.toolbar2 i{color: #fff}
+.toolbar2>div{width: 35px;height: 35px;color: #fff;cursor: pointer;line-height: 35px;text-align: center;position: relative;}
+.app-download{position: relative;}
+.download{top: -161px;left: -180px;opacity: 0;transition: all .5s;visibility: hidden;padding:10px;position: absolute;position: absolute;width: 155px;height: 207px;z-index: 999999;cursor: default;background: url(../images/bg222.png) no-repeat;}
+.download img:nth-child(1){width: 100px;margin-top: 35px;}
+.toolbar2>div:hover .tool-drop{left: -90px;opacity: 1;visibility: visible;}
+.app-download:hover .download{left: -155px;opacity: 1;visibility: visible;}
+#toTop{opacity: 0;transition:opacity .5s;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*------------------------首页END---------------------------

@@ -1,0 +1,77 @@
+/*公共样式*/
+.pub{width: 1190px;margin:0 auto;}
+
+/*头部*/
+.login-header{padding:27px 0;}
+
+/*logo*/
+.logo{width:190px;height:33px;padding:3px 0}
+.logo>img{width: 100%}
+
+/*主体*/
+.login-body{width: 100%;height:600px;background: rgb(255, 48, 137);}
+
+.bg{cursor:pointer;position:relative;height:100%;background: url(../images/login-body.jpg) no-repeat;}
+
+/*登录框外框*/
+.loginbox-wrap{width: 350px;height: 400px;position: absolute;z-index:99;top: 180px;right: 22%;background: #fff}
+.loginbox{position:relative;width: 100%;height: 315px;color: #404040;}
+
+/*登录安全提示*/
+.login-tip{width: 145px; height: 30px;position: relative;top:8px;left:146px;z-index:5;background: #fff;border:1px solid #df9c1f;padding:0 10px;}
+.login-tip>p{line-height: 25px;color: #df9c1f}
+.login-tip>p>i{color: #df9c1f;padding-right: 5px;}
+.triangle{width: 10px;height:10px;background:#fff;transform:rotate(45deg);border:1px solid #df9c1f;border-left:0;border-bottom:0;position: absolute;top: 9px;right: -6px;z-index:2;}
+
+/*切换扫码登录*/
+.login-switch{position: absolute;top: -5px;right:5px;}
+.icon-erweima1{width: 52px;height: 52px;font-size: 52px;color: #ff0036}
+.triangle2{width: 0;height: 0;border: 26px solid #fff;border-right: 26px solid transparent;border-top: 26px solid transparent;position: absolute;top: 15px;right: 1px;cursor: pointer;}
+
+/*账号密码登录表单*/
+#login-form{margin:10px 0 0 25px;width: 300px;height: 260px;}
+#login-form>p{font-size: 16px;font-weight: 600}
+#login-form>div{margin-top:25px;width: 300px;height: 42px;}
+#login-form input{padding:8px;width: 260px;height: 42px;outline: 0;border: 0;border: 1px solid #cbcbcb;}
+#login-form .login-text{color: #9b9b9b;}
+#login-form span{vertical-align: top;display:inline-block;width: 40px;height: 42px;line-height:40px;text-align:center;background: #ddd;}
+#login-form span i{font-size: 25px;color: #606060}
+#login-form #submit{cursor:pointer;width: 300px;background: #ff0036;color: #fff;border:0;border-radius: 3px;font-size: 16px;}
+#login-form div:last-child a{float: right;padding-right: 10px;}
+
+/*登录失败提示*/
+#error{font-size: 12px;color: #000;position: absolute;top: 43px;left: 25px;background: #fef2f2;color: #6C6C6C;line-height: 32px;padding: 7px 10px;overflow: hidden;width: 300px;display: none}
+
+/*点击重置账号*/
+#reset{cursor:pointer;position:absolute;top:100px;right:35px;z-index:99999;width: 18px;height: 18px;text-align:center;line-height:16px;font-size:16px;border-radius: 50%;background: #6c6c6c;color: #fff}
+
+/*登录按钮鼠标移入样式*/
+#login-form #submit:hover{opacity: .8}
+
+/**账号密码登录表单**/
+.page2{display: none;}
+#login-form2{margin:10px 0 0 25px;width: 300px;height: 260px;}
+.icon-diannaodenglu-copy{width: 52px;height: 52px;font-size: 52px;color: #ff0036}
+#login-form2>i{display:inline-block;margin:25px 0;font-size: 16px;font-weight: 600}
+#login-form>div{margin-top:25px;}
+.login-PC{position: absolute;top: -5px;right:5px;cursor: pointer;}
+.PClog>div>i{font-size: 28px;color: #ff0036;font-weight: bold}
+#login-QR-code{vertical-align: middle;text-align: center;}
+#icon-sao-parent{float:left; width: 188px;height: 36px; line-height: 36px;margin: 24px 0 0 58px;}
+#icon-sao-parent i{float: left;margin-right: 10px}
+#icon-sao-parent p{line-height: 18px;}
+#icon-sao-parent p>a{color: #ff0036}
+#login-form2 .forget{position: absolute;bottom: 0;right: 20px;}
+#login-form2 .forget>a{padding: 0 10px;}
+
+/*尾部*/
+footer{margin-top: 50px;}
+footer li{line-height: 25px}
+footer li a:hover{color: #999}
+.footer li:first-child a,.footer li:first-child+li a{color:#000;margin-right: 5px;}
+.footer li a:hover{text-decoration: underline;}
+.footer li:first-child+li{color: #fff;}
+.footer li:first-child+li~li i{margin-right: 50px;}
+
+
+
